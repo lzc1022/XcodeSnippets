@@ -10,16 +10,16 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UILable      *&lt;#textLabel#&gt;;
-- (UILabel *)textLabel {
-    if (!_textLabel) {
-        _textLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        _textLabel.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
-        _textLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
-        _textLabel.textColor = &lt;#[UIColor whiteColor]#&gt;;
-        _textLabel.text = &lt;#@""#&gt;;
+	<string>@property (nonatomic, strong) UILable      *my_Label;
+- (UILabel *)my_Label {
+    if (!_my_Label) {
+        _my_Label = [[UILabel alloc] initWithFrame:CGRectZero];
+        _my_Label.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
+        _my_Label.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+        _my_Label.textColor = &lt;#[UIColor whiteColor]#&gt;;
+        _my_Label.text = &lt;#@""#&gt;;
     }
-    return _textLabel;
+    return _my_Label;
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>

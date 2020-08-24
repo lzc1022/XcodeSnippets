@@ -10,16 +10,16 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UIImageView      *&lt;#iconImageView#&gt;;
-- (UIImageView *)iconImageView {
-    if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
-        _iconImageView.image = [UIImage imageNamed:&lt;#@""#&gt;];
-        _iconImageView.contentMode = UIViewContentModeScaleAspectFill;
-        _iconImageView.layer.cornerRadius = &lt;#height#&gt; / 2;
-        _iconImageView.layer.masksToBounds = YES;
+	<string>@property (nonatomic, strong) UIImageView      *my_imageView;
+- (UIImageView *)my_imageView {
+    if (!_my_imageView) {
+        _my_imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _my_imageView.image = [UIImage imageNamed:&lt;#@""#&gt;];
+        _my_imageView.contentMode = UIViewContentModeScaleAspectFill;
+        _my_imageView.layer.cornerRadius = &lt;#height#&gt; / 2;
+        _my_imageView.layer.masksToBounds = YES;
     }
-    return _iconImageView;
+    return _my_imageView;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>540E4577-55E0-4079-9A3C-D94973C5BDAA</string>

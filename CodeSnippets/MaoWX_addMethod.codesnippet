@@ -3,20 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>add</string>
+	<string>addmethod</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
 		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-- (void)&lt;#methodName#&gt; {
-    <#do some thing#>
-}
-</string>
+	<string>- (void)&lt;#addMethod#&gt; {
+    &lt;#do Something#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DA371A6F-AA59-4624-BDBD-D1841B733547</string>
+	<string>2DD9DD39-4F25-47D7-A2E8-37417743BB53</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
@@ -28,6 +26,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

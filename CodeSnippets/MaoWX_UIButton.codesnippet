@@ -10,24 +10,23 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UIButton      *&lt;#button#&gt;;
-- (UIButton *)button {
-    if (!_button) {
-        _button = [[UIButton alloc] initWithFrame:CGRectZero];
-        _button.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
-        _button.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
-        [_button setTitleColor:&lt;#[UIColor whiteColor]#&gt; forState:(UIControlStateNormal)];
-        [_button setTitle:&lt;#@""#&gt; forState:(UIControlStateNormal)];
-        [_button setImage:[UIImage imageNamed:&lt;#@""#&gt;] forState:(UIControlStateNormal)];
-        [_button addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:(UIControlEventTouchUpInside)];
-        
-        _button.layer.cornerRadius = &lt;#Radius#&gt; / 2;
-        _button.layer.masksToBounds = YES;
+	<string>@property (nonatomic, strong) UIButton      *my_button;
+- (UIButton *)my_button {
+    if (!_my_button) {
+        _my_button = [[UIButton alloc] initWithFrame:CGRectZero];
+        _my_button.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
+        _my_button.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+        [_my_button setTitleColor:&lt;#[UIColor whiteColor]#&gt; forState:(UIControlStateNormal)];
+        [_my_button setTitle:&lt;#@""#&gt; forState:(UIControlStateNormal)];
+        [_my_button setImage:[UIImage imageNamed:&lt;#@""#&gt;] forState:(UIControlStateNormal)];
+        [_my_button addTarget:self action:@selector(my_buttonAction:) forControlEvents:(UIControlEventTouchUpInside)];
+        _my_button.layer.cornerRadius = &lt;#height#&gt; / 2;
+        _my_button.layer.masksToBounds = YES;
     }
-    return _button;
+    return _my_button;
 }
 
-- (void)&lt;#Btn#&gt;BtnAction:(UIButton *)button {
+- (void)my_buttonAction:(UIButton *)button {
     
 }
 </string>
