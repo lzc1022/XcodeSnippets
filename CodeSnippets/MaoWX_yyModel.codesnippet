@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yymodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+        @"&lt;#新名称#&gt;" : @"&lt;#原始名称#&gt;",
+    };
+}
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{
+        @"&lt;#替换的新数组名称#&gt;" : [&lt;#数组中存放的Model#&gt; class],
+    };
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>74DB4E66-0D3C-43B9-A264-20A5961B9A45</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>设置yymodel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
