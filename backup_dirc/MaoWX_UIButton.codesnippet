@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mybtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) UIButton      *&lt;#button#&gt;;
+- (UIButton *)button {
+    if (!_button) {
+        _button = [[UIButton alloc] initWithFrame:CGRectZero];
+        _button.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
+        _button.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+        [_button setTitleColor:&lt;#[UIColor whiteColor]#&gt; forState:(UIControlStateNormal)];
+        [_button setTitle:&lt;#@""#&gt; forState:(UIControlStateNormal)];
+        [_button setImage:[UIImage imageNamed:&lt;#@""#&gt;] forState:(UIControlStateNormal)];
+        [_button addTarget:self action:@selector(&lt;#selector#&gt;) forControlEvents:(UIControlEventTouchUpInside)];
+        
+        _button.layer.cornerRadius = &lt;#Radius#&gt; / 2;
+        _button.layer.masksToBounds = YES;
+    }
+    return _button;
+}
+
+- (void)&lt;#Btn#&gt;BtnAction:(UIButton *)button {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>12AFDA4F-59C6-4269-8D79-216715E40940</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>生成UIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
