@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>myimage</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) UIImageView      *&lt;#iconImageView#&gt;;
+- (UIImageView *)iconImageView {
+    if (!_iconImageView) {
+        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        _iconImageView.image = [UIImage imageNamed:&lt;#@""#&gt;];
+        _iconImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _iconImageView.layer.cornerRadius = &lt;#height#&gt; / 2;
+        _iconImageView.layer.masksToBounds = YES;
+    }
+    return _iconImageView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>540E4577-55E0-4079-9A3C-D94973C5BDAA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>生成UIImageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

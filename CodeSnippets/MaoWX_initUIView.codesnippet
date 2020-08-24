@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>myview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+@property (nonatomic, strong) UIView      *&lt;#tmpView#&gt;;
+- (UIView *)tmpView {
+    if (!_tmpView) {
+        _tmpView = [[UIView alloc] initWithFrame:CGRectZero];
+        _tmpView.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
+        _tmpView.layer.cornerRadius = &lt;#height#&gt; / 2;
+        _tmpView.layer.masksToBounds = YES;
+    }
+    return _tmpView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D8ACC989-50A4-476F-B51D-E9BBD1E0E259</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>生成UIView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>showtableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#pragma mark - &lt;UITableViewDatasource&gt;
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
+    
+    return cell;
+}
+
+#pragma mark - &lt;UITableViewDelegate&gt;
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+#pragma mark - &lt;InitUI&gt;
+
+@property (nonatomic, strong) UITableView *plainTableView;
+
+- (UITableView *)plainTableView {
+    if (!_plainTableView) {
+        CGRect rect = CGRectMake(0, 0, kScreenWidth, kScreenHeight-(kStatusBarHeight+44));
+        _plainTableView = [[UITableView alloc] initWithFrame:rect style:UITableViewStylePlain];
+        _plainTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+        _plainTableView.backgroundColor = self.view.backgroundColor;
+        _plainTableView.tableFooterView = [UIView new];
+        _plainTableView.dataSource = self;
+        _plainTableView.delegate = self;
+        //_plainTableView.rowHeight = 44;
+        [self.view addSubview:_plainTableView];
+        if (@available(iOS 11.0, *)) {
+            _plainTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
+    return _plainTableView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4B9CB22A-48C1-4DAB-A254-B0189278A476</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>配置表格方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
