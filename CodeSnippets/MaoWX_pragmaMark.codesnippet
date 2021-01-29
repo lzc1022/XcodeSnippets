@@ -7,11 +7,9 @@
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
-		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-#pragma mark -======== &lt;#方法段描述#&gt; ========</string>
+	<string>#pragma mark -======== &lt;#方法段描述#&gt; ========</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>87E5A7D5-3F01-444A-AC5A-C93BF30C654A</string>
 	<key>IDECodeSnippetLanguage</key>

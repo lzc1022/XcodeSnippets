@@ -3,26 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myview</string>
+	<string>myrequest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-@property (nonatomic, strong) UIView      *&lt;#tmpView#&gt;;
-- (UIView *)tmpView {
-    if (!_tmpView) {
-        _tmpView = [[UIView alloc] initWithFrame:CGRectZero];
-        _tmpView.backgroundColor = &lt;#[UIColor whiteColor]#&gt;;
-        _tmpView.layer.cornerRadius = &lt;#height#&gt; / 2;
-        _tmpView.layer.masksToBounds = YES;
-    }
-    return _tmpView;
-}
-</string>
+	<string>#import "ZXNetworkRequest.h"
+/** &lt;#数据请求#&gt; */
+- (void)requestData {
+    ZXNetworkRequest *request = [[ZXNetworkRequest alloc] init];
+    request.requestType = WXNetworkRequestTypePOST;
+    request.requestUrl = API(&lt;#Port_name#&gt;);
+    request.parameters = @{
+        @"&lt;#name#&gt;"   : @"&lt;#name#&gt;",
+        @"&lt;#name#&gt;"   : @"&lt;#name#&gt;",
+        @"&lt;#name#&gt;"   : @"&lt;#name#&gt;",
+    };
+    [request startRequestWithBlock:^(WXResponseModel *responseModel) {
+        ZXLog(@"responseModel: %@", responseModel.responseDict);
+    }];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D8ACC989-50A4-476F-B51D-E9BBD1E0E259</string>
+	<string>3258925F-6054-4500-B02C-B57B980FC8E2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
@@ -30,7 +33,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>生成UIView</string>
+	<string>网络请求</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
