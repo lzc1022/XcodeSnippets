@@ -4,7 +4,7 @@
 ---
 #### 脚本导入使用方法
 ```
-1. check out the project using: git clone https://github.com/CoderMaoWX/XcodeSnippets.git
+1. check out the project using: git clone https://github.com/lzc1022/XcodeSnippets.git
 2. cd XcodeSnippets
 3. ./setup_snippets.sh
 ```
